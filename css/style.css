@@ -20,6 +20,7 @@
 .header__title{
     color: var(--color-sidebar-text);
     font-size: 15px;
+    
 }
 
 .nav{
@@ -29,9 +30,19 @@
 }
 
 .nav__list{
-   display: flex;
-   gap: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     padding: 6px;
-    border: var(--radius-md);
-    border: 1px solid ;
+    
+}
+
+.nav__item{
+   color: var(--color-sidebar-text); 
+   font-size: 20px;
+}
+
+
+.section-vet{
+    background-color: var(--color-bg-main);
 }
