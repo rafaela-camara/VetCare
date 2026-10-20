@@ -10,10 +10,19 @@ html {
   font-size: 62.5%;
 }
 
-main{
-    margin-left: 40vh;
-}
 
 ul, ol{
     list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: var(--radius-md);
 }

@@ -2,55 +2,217 @@
 @import url(/css/variables.css);
 @import url(/css/reset.css);
 
+.body{
+    display: flex;
+}
+
+
 .section-vet__menu{
     display: flex;
-    height: 100vh;
-    width: 100%;
-    position: fixed;  
+    height: auto;
+    width: 25%;
+    position: relative;
+    
+    
 }
 
 .section-vet__sidebar{
     display: flex;
     flex-direction: column;
-    width: 300px;
+    width: 260px;
     padding: 30px 20px;
     background-color: var(--color-sidebar-bg);
+
 }
 
 .header__title{
     color: var(--color-sidebar-text);
-    font-size: 15px;
+    font-size: var(--font-size-base);
+    position: fixed;
     
 }
 
 .nav{
-    display: flex;
-    flex-direction: column;
     gap: 20px;
+    position: fixed;
 }
 
 .nav__list{
     display: flex;
     flex-direction: column;
     gap: 10px;
-    padding: 6px;
-    
+    margin-top: 100px;
+    color: var(--color-sidebar-text); 
+   font-size: var(--font-size-base);
 }
 
 .nav__item{
-   color: var(--color-sidebar-text); 
-   font-size: 20px;
+  display: flex;
+}
+
+.nav__link{
+    font-weight: 600;
+    padding: 10px 18px;
+    border-radius: var(--radius-md);
+    position: relative;
+    background-color: transparent;
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.2 ease;
+}
+
+.nav__link:hover{
+    background-color: var(--color-primary);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-hover);
 }
 
 
 .section-vet{
     background-color: var(--color-bg-main);
-    height: var(--section-height);
-    min-height: 500px;
+    height: 100vh;
     display: flex;
     align-items: center;
+    /* justify-content: center; */
+    
+   
+}
+
+.section-vet__home{
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    margin: 10px;
+}
+
+.section-vet__title_home{
+    color: var(--color-text-title);
+    font-size: var(--font-size-xl);
+    padding: 10px;
+}
+
+.section-vet__text_home{
+    font-size: var(--font-size-base);
+    padding: 10px;
+
+}
+
+.section-vet__img{
+    margin: 10px;
+}
+
+.brand-card__content{
+    flex-direction: column;
+}
+.brand-card__title-pagina{
+    color: var(--color-text-title);
+    font-size: var(--font-size-xl);
+    padding: 10px;
+}
+
+.brand-card__container{
+    display: flex;
     justify-content: center;
-    padding: 0 5%;
-    border-bottom: 1px solid var(--color-border);
-    scroll-margin-top: var(--header-height);
+}
+.brand-card{
+    height: auto;
+    margin: 5px;
+    background-color: var(--color-bg-card);
+    padding: 10px;
+    border-radius: var(--radius-sm);
+    box-shadow: var(--shadow-card);
+}
+
+.brand-card__title{
+    font-size: var(--font-size-lg);
+    color: var(--color-primary-hover);
+    padding: 5px;
+}
+
+.brand-card__text{
+    font-size: var(--font-size-base);
+}
+
+
+
+.brand-card__image{
+    
+    width: 40%;
+}
+
+.brand-card__content{
+    flex-direction: column;
+}
+
+.brand-card__title-equipe{
+    
+    font-size: var(--font-size-lg);
+    color: var(--color-primary-hover);
+    margin-bottom: 30px;
+    margin-left: 5%;
+}
+
+.brand-card__content-equipe{
+  display: flex; 
+  justify-content: center; 
+  gap: 10px; 
+  margin: 50px;
+  
+}
+
+
+.brand-card__equipe {
+    background-color: var(--color-bg-card);
+    border-radius: 20px;
+    
+}
+.brand-card__equipe h3{
+    font-size: var(--font-size-lg);
+    color: var(--color-primary-hover);
+    
+    margin: 5px 0 10px 10px;
+}
+
+.brand-card__image{
+    width: auto;
+    height: auto;
+    margin: 20px;
+}
+
+.brand-card__text{
+    font-size: var(--font-size-base);
+    max-width: 500px;
+    color: var(--color-primary-hover);
+    margin: 5px 0 10px 10px;
+    
+}
+
+.brand-card__description{
+    font-size: var(--font-size-base);
+    margin: 0 0 10px 10px;
+}
+
+.section-vet__infra{
+    margin-left: 5%;
+}
+
+.section-vet__title_infra{
+    font-size: var(--font-size-xl);
+    color: var(--color-text-title);
+    margin: 2%;
+}
+
+.section-vet__text_infra{
+    font-size: var(--font-size-lg);
+}
+
+.section-vet__card_infra{
+    font-size: var(--font-size-lg);
+    background-color: var(--color-bg-card);
+    margin-top: 20px;
+    height: auto;
+    border-radius: 15px;
+    
+}
+
+.section-vet__card_infra p{
+    margin: 10px;
 }
